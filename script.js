@@ -19,7 +19,7 @@ console.log(instrumentos);
 
 instrumentos.push("Clarinete");
 console.log(instrumentos);
-
+console.log 
 
 /* Con una lista de accesorios de instrumentos musicales, utilizo el método map para crear un array con todos los elementos del array original. (En este caso para que me devuelva todos los accesorios que tenemos en stock). */
 
@@ -68,6 +68,9 @@ productos.push(new Producto("Lapicera", "120"));
 productos.push(new Producto("Lápiz", "100"));
 productos.push(new Producto("Goma", "70"));
 productos.push(new Producto("Hojas", "500"));
-for (const producto of productos)
+for (const producto of productos){
     producto.sumarIva();
+    console.log(producto.precio);
+}
+
 console.log(productos);
